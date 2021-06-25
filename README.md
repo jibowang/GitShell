@@ -24,3 +24,14 @@ LotteryServiceImpl.java
 替换脚本中  `https://gitlab.xxx.com/backend/` 为自己的地址
 
 
+##### 2. pre-push.sh
+git pre push hook, 阻止本地对特殊分支 git push -f 操作
+
+##### 用法
+根据需要修改保护分支：PROTECTED_BRANCHS=("master" "rc" "dev")
+
+1. mkdir $HOME/.githooks
+2. cd $HOME/.githooks
+3. vim pre-push
+4. git config --global core.hooksPath $HOME/.githooks
+5. chmod +x $HOME/.githooks/pre-push
