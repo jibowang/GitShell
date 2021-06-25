@@ -1,4 +1,4 @@
-#### 功能
+#### 功能介绍
 
 #### 1. GitPythonCheck.py
 从 gitlab 仓库中查询某个关键字
